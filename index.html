@@ -21,6 +21,14 @@
         .massaDeDados{
             border-right: 3px solid black;
         }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            background-color: blue;
+            padding: 25px;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -28,20 +36,21 @@
         <div class="grid">
             <div class="massaDeDados">
                 <h1>Massa de Dados</h1>
-                <code>Janela de execução: 2019-11-10 09:00:00 até 2019-11-11 12:00:00
-                    [
+                <code>
+                    Janela de execução: 2019-11-10 09:00:00 até 2019-11-11 12:00:00
+                    [ <br>
                     {
                     "ID": 1,
                     "Descrição": "Importação de arquivos de fundos",
                     "Data Máxima de conclusão": 2019-11-10 12:00:00,
                     "Tempo estimado": 2 horas,
-                    },
+                    }, <br>
                     {
                     "ID": 2,
                     "Descrição": "Importação de dados da Base Legada",
                     "Data Máxima de conclusão": 2019-11-11 12:00:00,
                     "Tempo estimado": 4 horas,
-                    },
+                    }, <br>
                     {
                     "ID": 3,
                     "Descrição": "Importação de dados de integração",
@@ -52,11 +61,12 @@
                 </code>
             </div>
             <div>
-                <button onclick="chamaFuncoes()">
-                    Executar
-                </button>
-                <div id="resultado">
-
+                <a href="#">
+                    <button onclick="chamaFuncoes()">
+                        Executar
+                    </button>
+                    <div id="resultado">
+                </a>
                 </div>
             </div>
         </div>
